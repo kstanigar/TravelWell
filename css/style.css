@@ -1,4 +1,4 @@
-/* Global Styles */
+/* GLOBAL STYLES */
 
 * {
   box-sizing: border-box;
@@ -15,7 +15,10 @@ body {
 }
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
 }
 
 li,
@@ -28,6 +31,7 @@ p {
 
 h2 {
   font-size: 4.8rem;
+  line-height: 5.5rem;
 }
 
 h3 {
@@ -54,6 +58,7 @@ button {
   border-radius: 1px;
   box-shadow: 2px 2px 2px rgba(27, 27, 27, 0.8);
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
@@ -61,7 +66,7 @@ button:hover {
   color: black;
 }
 
-/* Header Section */
+/* HEADER SECTION */
 
 header.main-head {
   min-height: 10vh;
@@ -74,7 +79,7 @@ header.main-head {
 }
 
 #logo {
-  font-family: "Dancing Script", cursive;
+  font-family: "Courgette", cursive;
   margin-left: 5rem;
 }
 
@@ -85,16 +90,20 @@ header.main-head {
 
 .main-head nav ul li {
   list-style: none;
+  margin-right: 5rem;
 }
 
 .main-head nav ul li a {
   color: aliceblue;
   text-decoration: none;
-  font-size: 1.2rem;
-  margin-right: 5rem;
+  font-size: 1.5rem;
 }
 
-/* Hero Section */
+.main-head nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url("../images/landing-page.jpg");
@@ -114,14 +123,8 @@ header.main-head {
   padding: 3rem;
 }
 
-/* .span-logo {
-  font-family: "Dancing Script", cursive;
-  font-weight: 200;
-  font-size: 3.2rem;
-} */
-
 section.hero h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 section.hero h3 {
@@ -129,29 +132,77 @@ section.hero h3 {
   line-height: 4rem;
 }
 
-/* Locations Section */
+/* LOCATIONS SECTION */
 #locations {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.45), transparent),
     url("../images/new-york-page.png") no-repeat center center/cover;
   text-shadow: 1px 1px 1px #131c27;
   color: black;
+  position: relative;
+  overflow: hidden;
 }
 
 .locations-head {
   width: 65%;
-  padding: 5rem 0 0 5rem;
+  padding: 6rem 0 0 5rem;
 }
 
 .locations-head h2 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
 }
 
 .locations-head h3 {
   line-height: 4rem;
+  background: linear-gradient(#1a1717, #bb8f5d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Media Queries */
+/* CLOUDS */
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 55%;
+  pointer-events: none;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 6s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+  z-index: -1;
+  top: 16%;
+  opacity: 0.5;
+  animation: cloudAnimation-2 6s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(7%, -5%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes cloudAnimation-2 {
+  from {
+    transform: translate(3.5%, -1%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1280px) {
   html {
@@ -182,10 +233,21 @@ section.hero h3 {
 
   .main-head nav ul li a {
     font-size: 2rem;
+    /* margin: 0; */
+  }
+
+  .moving-cloud-2 {
+    top: 5%;
   }
 }
 
 @media screen and (max-width: 708px) {
+  .locations-head h2 {
+    padding-top: 8rem;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
   header.locations-head h3 {
     display: none;
   }
