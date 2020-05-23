@@ -394,4 +394,18 @@ header.benefits-head h3 {
     width: 90%;
     margin: auto;
   }
+
+  .form-wrapper button {
+    width: 60%;
+  }
+
+  .footer-wrapper {
+    text-align: center;
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .footer-wrapper h5 {
+    margin: 0 0 1rem 0;
+  }
 }
