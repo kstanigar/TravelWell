@@ -12,6 +12,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 h1 {
@@ -174,6 +176,7 @@ section.hero h3 {
 /* CLOUDS */
 
 .cloud {
+  min-height: 20%;
   position: absolute;
   top: 0%;
   right: 0%;
@@ -182,7 +185,7 @@ section.hero h3 {
 }
 
 .moving-cloud-1 {
-  animation: cloudAnimation 6s infinite alternate ease-in-out;
+  animation: cloudAnimation 5s infinite alternate ease-in-out;
 }
 
 .moving-cloud-2 {
@@ -190,6 +193,27 @@ section.hero h3 {
   top: 16%;
   opacity: 0.5;
   animation: cloudAnimation-2 6s infinite alternate ease-in-out;
+}
+
+/* KEYFRAMES */
+@keyframes cloudAnimation {
+  from {
+    transform: translate(8%, -5%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes cloudAnimation-2 {
+  from {
+    transform: translate(4%, -1%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
 }
 
 /* BENEFITS SECTION */
@@ -319,27 +343,6 @@ header.benefits-head h3 {
   padding: 0 3rem;
 }
 
-/* KEYFRAMES */
-@keyframes cloudAnimation {
-  from {
-    transform: translate(7%, -5%);
-  }
-
-  to {
-    transform: translate(0%, 0%);
-  }
-}
-
-@keyframes cloudAnimation-2 {
-  from {
-    transform: translate(3.5%, -1%);
-  }
-
-  to {
-    transform: translate(0%, 0%);
-  }
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1280px) {
@@ -367,11 +370,17 @@ header.benefits-head h3 {
   .main-head nav ul li {
     margin: 0 4rem;
     padding-bottom: 2rem;
+    text-align: center;
   }
 
   .main-head nav ul li a {
     font-size: 2rem;
     /* margin: 0; */
+  }
+
+  button {
+    padding: 2rem 7rem;
+    font-size: 2.5rem;
   }
 
   .moving-cloud-2 {
@@ -400,12 +409,43 @@ header.benefits-head h3 {
   }
 
   .footer-wrapper {
+    flex-direction: column;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0;
     justify-content: center;
+    align-items: center;
   }
 
   .footer-wrapper h5 {
     margin: 0 0 1rem 0;
+  }
+
+  .footer-wrapper ul {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-wrapper ul li {
+    padding: 0rem;
+    padding: 1rem 5rem;
+  }
+
+  .footer-wrapper ul li a img {
+    min-width: 4rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .main-head nav ul {
+    flex-direction: column;
+  }
+
+  .main-head nav ul li a {
+    font-size: 2.7rem;
+  }
+
+  .locations-head {
+    padding-left: 1rem;
   }
 }
