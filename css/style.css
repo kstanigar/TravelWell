@@ -68,6 +68,18 @@ button:hover {
   color: black;
 }
 
+button > a:hover {
+  color: black;
+}
+
+button:focus {
+  outline-style: solid;
+}
+
+a:focus {
+  outline-style: solid;
+}
+
 /* HEADER SECTION */
 
 header.main-head {
@@ -110,7 +122,7 @@ header.main-head {
 
 /* HERO SECTION */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url("../images/landing-page.jpg");
   background-color: slategray;
   color: aliceblue;
@@ -150,7 +162,7 @@ section.hero h3 {
 
 .locations-head {
   width: 65%;
-  padding: 6rem 0 0 5rem;
+  padding: 6.5rem 0 0 5rem;
 }
 
 .locations-head h2 {
@@ -169,8 +181,8 @@ section.hero h3 {
     from(#1a1717),
     to(#bb8f5d)
   );
-  background: -o-linear-gradient(#1a1717, #bb8f5d);
-  background: linear-gradient(#1a1717, #bb8f5d);
+  background: -o-linear-gradient(#1a1717, #5c3d19);
+  background: linear-gradient(#1a1717, #5c3d19);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -364,6 +376,7 @@ header.benefits-head h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: static;
   }
 
   #logo {
@@ -378,8 +391,7 @@ header.benefits-head h3 {
   }
 
   .main-head nav ul li a {
-    font-size: 2rem;
-    /* margin: 0; */
+    font-size: 2.5rem;
   }
 
   button {
@@ -441,8 +453,20 @@ header.benefits-head h3 {
 }
 
 @media screen and (max-width: 412px) {
+  #logo {
+    font-size: 3rem;
+  }
+
+  header.main-head nav ul li a {
+    font-size: 2rem;
+  }
   .main-head nav ul {
     flex-direction: column;
+  }
+
+  header.main-head nav ul li {
+    /* background: red; */
+    padding-bottom: 1rem;
   }
 
   .main-head nav ul li a {
