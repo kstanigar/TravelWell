@@ -176,7 +176,7 @@ section.hero h3 {
 /* CLOUDS */
 
 .cloud {
-  min-height: 20%;
+  min-height: 25%;
   position: absolute;
   top: 0%;
   right: 0%;
@@ -293,6 +293,7 @@ header.benefits-head h3 {
 
 .form-wrapper input {
   padding: 0.5rem 0.5rem;
+  min-width: 60%;
 }
 
 .form-head {
@@ -405,7 +406,7 @@ header.benefits-head h3 {
   }
 
   .form-wrapper button {
-    width: 60%;
+    width: 70%;
   }
 
   .footer-wrapper {
