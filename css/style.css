@@ -223,7 +223,7 @@ section.hero h3 {
 
 @keyframes cloudAnimation-2 {
   from {
-    transform: translate(4%, -1%);
+    transform: translate(4%, -3%);
   }
 
   to {
@@ -234,8 +234,8 @@ section.hero h3 {
 /* BENEFITS SECTION */
 header.benefits-head {
   background: #131c27;
-  min-height: 30vh;
-  padding: 3rem;
+  min-height: 40vh;
+  padding: 6rem 0 0 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,11 +249,12 @@ header.benefits-head h2 {
 
 header.benefits-head h3 {
   margin: 0 3rem;
+  padding-bottom: 5rem;
 }
 
 .cards {
   width: 95%;
-  min-height: 70vh;
+  min-height: 60vh;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
