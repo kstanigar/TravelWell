@@ -360,10 +360,10 @@ header.benefits-head h3 {
   justify-content: space-around;
   margin-top: 1rem;
 }
-
 .footer-wrapper ul li {
   list-style: none;
   padding: 0 3rem;
+  transition: all 0.3s ease-in-out;
 }
 .footer-wrapper ul li:hover {
   transform: scale(1.2);
@@ -377,30 +377,25 @@ header.benefits-head h3 {
     font-size: 65%;
   }
 }
-
 @media screen and (max-width: 940px) {
   html {
     font-size: 50%;
   }
-
   header.main-head {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: static;
   }
-
   #logo {
     margin: 2rem 0;
     font-size: 4rem;
   }
-
   .main-head nav ul li {
     margin: 0 4rem;
     padding-bottom: 2rem;
     text-align: center;
   }
-
   .main-head nav ul li a {
     font-size: 2rem;
   }
@@ -409,7 +404,6 @@ header.benefits-head h3 {
     padding: 2rem 7rem;
     font-size: 2.5rem;
   }
-
   .moving-cloud-2 {
     top: 5%;
   }
