@@ -233,6 +233,7 @@ section.hero h3 {
 
 /* BENEFITS SECTION */
 header.benefits-head {
+  color: aliceblue;
   background: #131c27;
   min-height: 40vh;
   padding: 6rem 0 0 3rem;
@@ -273,6 +274,9 @@ header.benefits-head h3 {
 .card-icon {
   background: #131c27;
 }
+.card-icon .route {
+  max-width: 12%;
+}
 .card img {
   max-width: 15%;
   margin: 2rem;
@@ -280,7 +284,7 @@ header.benefits-head h3 {
 
 .card h4,
 .card p {
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 /* Contact Section */
