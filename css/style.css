@@ -578,11 +578,13 @@ header.benefits-head h3 {
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 467px) {
   #logo {
     font-size: 3rem;
   }
-
+  header.main-head {
+    padding: 0;
+  }
   header.main-head nav ul li a {
     font-size: 2rem;
   }
@@ -601,8 +603,15 @@ header.benefits-head h3 {
   .main-head nav ul li a {
     font-size: 2.7rem;
   }
+  .hero {
+    padding: 12px;
+  }
+  header.benefits-head {
+    padding: 12px;
+  }
 
   .locations-head {
     padding-left: 1rem;
+    margin-left: 1rem;
   }
 }
