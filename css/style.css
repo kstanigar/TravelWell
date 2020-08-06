@@ -251,8 +251,8 @@ section.hero h3 {
   }
 
   to {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
   }
 }
 @keyframes cloudAnimation {
@@ -262,8 +262,8 @@ section.hero h3 {
   }
 
   to {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
   }
 }
 
@@ -484,8 +484,9 @@ header.benefits-head h3 {
 }
 @media screen and (max-width: 940px) {
   html {
-    font-size: 50%;
+    font-size: 53%;
   }
+  
   header.main-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -519,6 +520,7 @@ header.benefits-head h3 {
   .moving-cloud-2 {
     top: 5%;
   }
+  
 }
 
 @media screen and (max-width: 708px) {
@@ -555,7 +557,7 @@ header.benefits-head h3 {
         -ms-flex-align: center;
             align-items: center;
   }
-
+  
   .footer-wrapper h5 {
     margin: 1.5rem;
   }
@@ -596,7 +598,6 @@ header.benefits-head h3 {
   }
 
   header.main-head nav ul li {
-    /* background: red; */
     padding-bottom: 1rem;
   }
 
