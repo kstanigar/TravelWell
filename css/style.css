@@ -522,10 +522,10 @@ header.benefits-head h3 {
   .moving-cloud-2 {
     top: 5%;
   }
+  
   .card p {
     padding: 1.5rem;
   }
-  
 }
 
 @media screen and (max-width: 708px) {
