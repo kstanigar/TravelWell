@@ -20,6 +20,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  max-width: 100%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
@@ -92,7 +93,6 @@ a:focus {
 }
 
 /* HEADER SECTION */
-
 header.main-head {
   min-height: 10vh;
   padding: 0.5rem;
